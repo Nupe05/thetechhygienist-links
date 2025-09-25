@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Tech Hygienist — Links</title>
+  <meta name="description" content="The Tech Hygienist — Investor, Founder of ClaimlyAI, Owner of J‑Tu LLC. Connect and explore links." />
+  <meta name="theme-color" content="#0b1220" />
+  <meta property="og:title" content="The Tech Hygienist — Links" />
+  <meta property="og:description" content="Investor • Founder • Innovator. Explore ClaimlyAI, J‑Tu LLC, and connect." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/thetechhygienist-profile.png" />
+  <meta property="og:url" content="https://thetechhygienist.com/links" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-start: #0e2a47;
+      --bg-end: #0b1220;
+      --text: #eaf2ff;
+      --muted: #a9b6d1;
+      --card: rgba(255,255,255,0.06);
+      --stroke: rgba(255,255,255,0.12);
+      --accent: #e11d48;
+      --accent-2: #22d3ee;
+      --btn: #0f172a;
+      --btn-hover: #111827;
+      --shadow: 0 10px 30px rgba(2, 12, 27, 0.5);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, #123357 0%, transparent 50%),
+                  radial-gradient(800px 600px at -10% 110%, rgba(226, 29, 72, 0.25) 0%, transparent 60%),
+                  linear-gradient(160deg, var(--bg-start), var(--bg-end));
+      display: grid; place-items: center;
+      padding: 28px;
+    }
+    .wrap { width: 100%; max-width: 760px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.04));
+      border: 1px solid var(--stroke);
+      border-radius: calc(var(--radius) + 8px);
+      padding: clamp(18px, 4vw, 32px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .glow {
+      position: absolute; inset: -40px; pointer-events: none; opacity: 0.3;
+      background: radial-gradient(500px 300px at 15% 0%, rgba(34,211,238,0.25), transparent 60%),
+                  radial-gradient(400px 260px at 85% 100%, rgba(225,29,72,0.20), transparent 60%);
+      filter: blur(20px);
+    }
+    header { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: center; }
+    .pfp { width: 96px; height: 96px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.18); overflow: hidden; box-shadow: 0 12px 30px rgba(0,0,0,0.35); }
+    .pfp img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .title { font-size: clamp(22px, 2.4vw, 30px); font-weight: 700; letter-spacing: 0.2px; }
+    .subtitle { color: var(--muted); margin-top: 4px; font-size: 14px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge { font-size: 12px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.04); color: #cfe6ff; }
+
+    .links { margin-top: 22px; display: grid; gap: 14px; }
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      margin: 20px 0 6px 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .btn {
+      display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 14px;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      color: var(--text); text-decoration: none; padding: 14px 16px; border-radius: var(--radius);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .2s ease;
+      position: relative; overflow: hidden;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 25px rgba(15,23,42,0.35); border-color: rgba(34,211,238,0.35); }
+    .btn:active { transform: translateY(0); }
+    .btn .icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: rgba(34,211,238,0.1); border: 1px solid rgba(34,211,238,0.25); }
+    .btn .icon svg { width: 22px; height: 22px; fill: none; stroke: #7dd3fc; stroke-width: 1.8; }
+    .btn .label { font-weight: 600; font-size: 16px; letter-spacing: 0.2px; }
+    .btn .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .btn .cta { color: #9be8ff; font-size: 12px; border: 1px solid rgba(155,232,255,0.35); padding: 6px 10px; border-radius: 999px; background: rgba(155,232,255,0.08); }
+
+    footer { margin-top: 26px; display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; color: var(--muted); font-size: 12px; border-top: 1px dashed var(--stroke); padding-top: 14px; }
+    .social { display: flex; gap: 10px; }
+    .social a { color: var(--muted); text-decoration: none; border: 1px solid var(--stroke); padding: 8px 12px; border-radius: 999px; transition: border-color .2s ease, color .2s ease; }
+    .social a:hover { color: #e8f3ff; border-color: rgba(232,243,255,0.5); }
+
+    @media (max-width: 520px) {
+      header { grid-template-columns: 72px 1fr; }
+      .pfp { width: 72px; height: 72px; }
+      .btn { grid-template-columns: 40px 1fr auto; padding: 12px 14px; }
+      .btn .icon { width: 40px; height: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="glow" aria-hidden="true"></div>
+      <header>
+        <div class="pfp" aria-hidden="true">
+          <img src="/images/thetechhygienist-profile.png" alt="The Tech Hygienist profile" />
+        </div>
+        <div>
+          <div class="title">The Tech Hygienist™</div>
+          <div class="subtitle">Investor • Founder • Innovator — Husband & Father of 2</div>
+          <div class="badges">
+            <span class="badge">ClaimlyAI</span>
+            <span class="badge">J‑Tu LLC</span>
+          </div>
+        </div>
+      </header>
+
+      <nav class="links" aria-label="Primary Links">
+        <a class="btn" href="https://claimlyai.ai" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 19l3-1 8-8a3 3 0 10-4-4L6 14l-1 3z"/><path d="M15 9l-6 6"/><path d="M5 19l4-4"/></svg>
+          </span>
+          <span>
+            <div class="label">ClaimlyAI</div>
+            <div class="desc">AI tools that simplify & speed up claims</div>
+          </span>
+          <span class="cta">Explore</span>
+        </a>
+
+        <a class="btn" href="https://j2llc.ai" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15v-4"/><path d="M12 15V7"/><path d="M17 15v-2"/></svg>
+          </span>
+          <span>
+            <div class="label">J‑Tu LLC</div>
+            <div class="desc">Investments & ventures</div>
+          </span>
+          <span class="cta">View</span>
+        </a>
+
+        <!-- ===== REBRAND REMINDER: ABOUT LINK =====
+             To re-enable the About link after you secure your domain:
+             1) Replace the HREF with your final About URL.
+             2) Remove the surrounding comment markers to render the button.
+
+             Example block to restore:
+
+             <a class="btn" href="https://thetechhygienist.com/about" target="_blank" rel="noopener">
+               <span class="icon" aria-hidden="true">
+                 <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 100-10 5 5 0 000 10z"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+               </span>
+               <span>
+                 <div class="label">About Me</div>
+                 <div class="desc">Father • Husband • Builder</div>
+               </span>
+               <span class="cta">Read</span>
+             </a>
+
+          ========================================= -->
+
+        <div class="section-title">📧 Contact</div>
+
+        <a class="btn" href="mailto:hello@j2llc.ai" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          <span>
+            <div class="label">Business Inquiries</div>
+            <div class="desc">Personal services & partnerships</div>
+          </span>
+          <span class="cta">Email</span>
+        </a>
+
+        <a class="btn" href="mailto:info@claimlyai.ai" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          <span>
+            <div class="label">ClaimlyAI Info</div>
+            <div class="desc">Product questions & collaborations</div>
+          </span>
+          <span class="cta">Email</span>
+        </a>
+      </nav>
+
+      <footer>
+        <div class="social">
+          <a href="https://instagram.com/thetechhygienist" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/damon-sparks-9766bb385/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const CONFIG = {
+        analyticsUrl: 'https://thetechhygienist.com/api/pv',
+        timeoutMs: 1500,
+      };
+
+      // Dev reminder: About link is intentionally hidden until domain is secured.
+      // We'll ask about this at the start of each rebrand session.
+      console.info('[Reminder] The "About Me" button is hidden until your domain is ready. When ready, see the REBRAND REMINDER comment block in the HTML to re-enable.');
+
+      function sendAnalytics(url, payload) {
+        if (!url) return Promise.resolve(false);
+        try {
+          if (navigator.sendBeacon) {
+            const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+            navigator.sendBeacon(url, blob);
+            return Promise.resolve(true);
+          }
+        } catch (_) {}
+
+        const controller = new AbortController();
+        const t = setTimeout(() => controller.abort(), CONFIG.timeoutMs);
+
+        return fetch(url, {
+          method: 'POST',
+          keepalive: true,
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          signal: controller.signal,
+        })
+          .catch(() => {})
+          .finally(() => clearTimeout(t));
+      }
+
+      sendAnalytics(CONFIG.analyticsUrl, { p: 'links', t: Date.now() });
+
+      const qp = new URLSearchParams(location.search);
+      if (qp.get('test') === '1') {
+        const tests = [];
+        function log(result, msg) { tests.push((result ? 'PASS' : 'FAIL') + ': ' + msg); }
+
+        Promise.resolve()
+          .then(() => sendAnalytics('https://example.invalid/pv', { p: 'test', t: Date.now() }))
+          .then(() => log(true, 'handles unreachable endpoint without throwing'))
+          .catch(() => log(false, 'unexpected throw on unreachable endpoint'))
+          .finally(() => {
+            return sendAnalytics('', { p: 'disabled' }).then(() => log(true, 'gracefully skips when url is empty'));
+          })
+          .finally(() => {
+            console.log('[Link Hub Tests]', tests.join(' | '));
+          });
+      }
+    })();
+  </script>
+</body>
+</html>
